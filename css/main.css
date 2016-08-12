@@ -1,0 +1,126 @@
+.classinha {
+  width: 100%;
+  height: auto;
+}
+@import url("../node_modules/bulma/css/bulma.css");
+.columns:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+body {
+  width: 100%;
+  height: auto;
+  background-color: #323844 !important;
+}
+.small-widget {
+  width: 300px;
+  height: 350px;
+  background-color: #242a34;
+  border-radius: 8px;
+  display: inline-block;
+}
+.container {
+  width: 100%;
+  display: inline-flex;
+/* margin: 10px; */
+  height: auto;
+}
+#items {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  flex: 1 1 auto;
+  flex-basis: initial;
+  flex-wrap: wrap;
+}
+#items li {
+  display: inline-flex;
+  margin: 1% auto;
+  cursor: move;
+  flex-flow: column;
+}
+.loading-bar {
+  height: 60px;
+  background-color: #272d38;
+  border-radius: 8px;
+  border-bottom: none;
+}
+.loader-00 {
+  margin-top: calc(200px / 2);
+  text-align: center;
+}
+.small-widget:first-child {
+  margin-left: 4px;
+}
+:last-child {
+  margin-right: 4px;
+}
+.medium-widget {
+  width: 600px;
+  height: 350px;
+  background-color: #242a34;
+  border-radius: 8px;
+  display: inline-block;
+}
+.large-widget {
+  width: 1216px;
+  height: 350px;
+  background-color: #242a34;
+  border-radius: 8px;
+  display: inline-block;
+}
+.cat {
+  background: #fff;
+  padding: 10px;
+  float: left;
+  margin: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .large-widget {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .large-widget {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  .small-widget {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  .container {
+    width: initial;
+    display: inline-flex;
+/* margin: 10px; */
+    height: auto;
+  }
+  #items li {
+    width: 90%;
+    flex-flow: column;
+  }
+  .small-widget:first-child {
+    margin-left: auto;
+  }
+  .small-widget:last-child {
+    margin-right: auto;
+  }
+  .medium-widget {
+    width: 90%;
+    height: 350px;
+    background-color: #242a34;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1910px) {
+  .container {
+    width: 70%;
+    display: inline-flex;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+  }
+}

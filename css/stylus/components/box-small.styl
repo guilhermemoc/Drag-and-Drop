@@ -1,0 +1,78 @@
+@import url('../node_modules/bulma/css/bulma.css')
+// grid corrections
+.columns:not(:last-child){
+  margin-bottom: 0 !important;
+}
+
+
+
+body{
+  width: 100%;
+  height: auto;
+  background-color: #323844 !important;
+}
+
+  .small-widget{
+    width: 300px;
+    height: 350px;
+    background-color: #242a34;
+    border-radius: 8px;
+    // margin: 2% 1%;
+    display: inline-block;
+    }
+
+// .container {
+//     width: 100%;
+//     margin: 0 auto;
+//     display: block;
+//     height: auto;
+// }
+
+    // #items{
+    //   display: block;
+    //   list-style: none;
+    //   width: 100%;
+    //   margin: 0 auto;
+    //   text-align: center;
+    // }
+  // #items li{
+  //   display: inline-block;
+  //   margin: 1% auto;
+  //   cursor: move;
+  // }
+  .container {
+    width: 100%;
+    display: inline-flex;
+    /* margin: 10px; */
+    height: auto;
+
+}
+  #items {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+    flex: 1 1 auto;
+    flex-basis: initial;
+    flex-wrap: wrap;
+}
+  #items li {
+    display: inline-flex;
+    margin: 1% auto;
+    cursor: move;
+    flex-flow: column;
+}
+
+  .loading-bar{
+    height: 60px;
+    background-color: #272d38;
+    border-radius: 8px;
+    border-bottom: none;
+  }
+
+.loader-00{
+  margin-top: calc(200px/2);
+  text-align: center;
+}
+
+ .small-widget:first-child { margin-left: 4px;}
+ :last-child {margin-right: 4px; }
